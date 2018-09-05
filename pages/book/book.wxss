@@ -1,9 +1,22 @@
 /* pages/book/book.wxss */
-@import '/towxml/style/main.wxss';
-@import '/towxml/style/theme/light.wxss';
-@import '/towxml/style/theme/dark.wxss';
-@import '/static/iconfont/iconfont.wxss';
 
+@import '/static/iconfont/iconfont.wxss';
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -150rpx;
+  margin-top: -150rpx;
+  width: 300rpx;
+  height: 300rpx;
+  /* transform: translate(50%,50%) */
+}
+.book{
+  padding: 30rpx;
+}
+.book .book-main{
+  padding-bottom: 100rpx
+}
 .book .menu {
   position: fixed;
   bottom: 0;
@@ -38,6 +51,11 @@
   border: 1px solid #f1f1f1;
   z-index: 996;
   width: 680rpx;
+  transform:translate3d(-100%,0,0);
+  transition: transform .3s ease;
+}
+.active {
+  transform: translate3d(0,0,0)
 }
 .catalog-menu .catalog-item {
   font-size: 14px;

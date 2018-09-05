@@ -25,6 +25,10 @@ Page({
         swiperData:res.data,
         isLoading:false
       })
+    }).catch(err => {
+      this.setData({
+        isLoading:false
+      })
     })
   },
   getContent(){

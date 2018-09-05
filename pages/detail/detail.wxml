@@ -1,5 +1,6 @@
 <!--pages/bookdetail/detail.wxml-->
-<view class='detail'>
+<image src='/static/img/loading.svg' class="loading" wx:if="{{isLoading}}"></image>
+<view class='detail' wx:else>
   <view class='book-detail'>
     <view class='book-t'>
       <image class='img' src='{{bookData.data.img}}'></image>

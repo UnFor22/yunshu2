@@ -7,7 +7,8 @@ Page({
    */
   data: {
     bookId:"",
-    bookData: {}
+    bookData: {},
+    isLoading :false
   },
 
   /**
@@ -20,9 +21,17 @@ Page({
     this.getData()
   },
   getData(){
+    this.setData({
+      isLoading:true
+    })
     fetch.get(`/book/${this.data.bookId}`).then(res =>{
       this.setData({
-        bookData: res
+        bookData: res,
+        isLoading:false
+      })
+    }).catch(err =>{
+      this.setData({
+        isLoading:false        
       })
     })
   },
