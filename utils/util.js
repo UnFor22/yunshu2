@@ -15,7 +15,7 @@ const fetch = {
         method,
         header,
         success(res) {
-          console.log(res)
+          // console.log(res)
           if(res.header.Token){
             wx.setStorageSync('token', res.header.Token)
           }
@@ -42,7 +42,7 @@ const login = () => {
         appid: "wx2210325452b9f5aa",
         secret: 'a869ec05052ad7fea28ef84d3ec5d9b6'
       }).then(res => {
-        // console.log(res)
+        console.log(res)
       })
     }
   })

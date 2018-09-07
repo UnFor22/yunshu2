@@ -54,5 +54,9 @@
   </view>
   </view>
   
-  <!-- <loadingBottom has-more="{{hasMore}}" wx:if="{{!isLoading}}"></loadingBottom> -->
+   <!-- <view class='index-menu'>
+    <view class='iconfont icon-shouye' bindtap='handlePrev'><text class='index-text'>首页</text></view>
+    <view class='iconfont icon-wodexuexi' bindtap='handleAdd'><text class='index-text'>我的学习</text></view>
+    <view class='iconfont icon-user-center' bindtap='toggleCatalog'><text class='index-text'>个人中心</text></view>
+  </view> -->
 </view>

@@ -1,0 +1,42 @@
+/* pages/user/user.wxss */
+.user-top{
+  background: #1296db;
+  padding: 20rpx;
+}
+.user{
+  margin-top: 20rpx;
+  display: flex;
+}
+.user .user-img{
+  width: 100rpx;
+  height: 100rpx;
+
+  border-radius: 50%
+}
+.user-info{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.user-info .username{
+  color: #eee;
+  font-size: 16px;
+}
+.user-info .user-intro{
+  margin-top: 20rpx;
+  color: #eee;
+  font-size: 14px;
+}
+.user-option{
+  display: flex;
+  margin-top: 40rpx;
+  justify-content: space-around;
+  text-align: center;
+}
+.user-option .user-option-text{
+  display: flex;
+  width: 100rpx;
+  flex-direction: column;
+  color: #eee;
+  font-size: 14px;
+}

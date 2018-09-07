@@ -1,0 +1,25 @@
+<!--pages/user/user.wxml-->
+<view>
+  <image src='/static/img/loading.svg' class="loading" wx:if="{{isLoading}}"></image>
+  <view wx:else>
+    <view class='user-top'>
+      <view class='user'>
+        <image class='user-img' src='/static/img/loading.svg'></image>
+        <view class='user-info'>
+          <text class='username'>用户名</text>
+          <text class='user-intro'>这家伙很懒，什么也没留下</text>
+        </view>
+      </view>
+      <view class='user-option'>
+        <view class='user-option-l user-option-text' bindtap='toggleCollect'>
+          <text>2</text>
+          <text>收藏</text>
+        </view>
+        <view class='user-option-r user-option-text'>
+          <text>4</text>
+          <text>关注</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

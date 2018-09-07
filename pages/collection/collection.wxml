@@ -1,0 +1,12 @@
+<!--pages/collention/collection.wxml-->
+<view>
+  <image src='/static/img/loading.svg' class="loading" wx:if="{{isLoading}}"></image>
+  <view wx:else>
+    <view>
+      <view wx:for="{{collection}}" wx:key="{{index}}" class='catalog-item'>
+        {{item.book.title}}
+        {{item.book.img}}
+      </view>
+    </view>
+  </view>
+</view>
