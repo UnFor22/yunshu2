@@ -2,7 +2,6 @@
 import {fetch, showToast} from "../../utils/util.js"
 const app = getApp()
 Page({
-
   data: {
     titleId: "",
     article:{},
